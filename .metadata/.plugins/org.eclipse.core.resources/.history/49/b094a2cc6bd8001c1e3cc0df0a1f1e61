@@ -1,0 +1,16 @@
+package edu.uchicago.adamzhang22.accounts;
+
+import java.util.Map;
+
+public class DiamondHands implements StateOfMind {
+
+	@Override
+	public Map<String, String> evaluateRecs(Map<String, String> recs) {
+		Map<String, String> res = new HashMap<String, String>();
+		
+		return null;
+	}
+
+
+
+}

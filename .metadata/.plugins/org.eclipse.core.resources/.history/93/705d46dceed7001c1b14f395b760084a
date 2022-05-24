@@ -1,0 +1,8 @@
+package camelinaction;
+
+public class RoboManager {
+	public static void main(String[] args) {
+		InvestmentStrategy strategy = new MiddleOfTheRoad();
+		RoboInvestor investor = new RoboInvestor();
+	}
+}

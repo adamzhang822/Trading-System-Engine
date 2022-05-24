@@ -1,0 +1,23 @@
+package edu.uchicago.adamzhang22.robo;
+
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
+
+public class RoboProcessor implements Processor {
+	
+	RoboInvestor robo;
+	String ticker;
+	String stat;
+	
+	public RoboProcessor(RoboInvestor robo, String ticker, String stat) {
+		this.robo = robo;
+		this.ticker = ticker;
+		this.stat = stat;
+	}
+	
+	
+	public static void process(Double val) {
+		robo.getData().get(ticker).put(stat, val);
+	}
+	
+}

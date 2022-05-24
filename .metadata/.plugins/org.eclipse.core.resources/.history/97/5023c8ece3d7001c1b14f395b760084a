@@ -1,0 +1,41 @@
+package edu.uchicago.adamzhang22.robo;
+
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+
+public class BuyLow implements InvestmentStrategy{
+	
+	
+	List<String> params;
+
+	public Map<String, String> makeRecs(Map<String, Map<String, Double>> data) {
+		// Step 1: Get average for the params
+		Map<String, Double> avgs = new HashMap<String, Double>();
+		avgs.put("ORCL", 0.0);
+		avgs.put("MSFT", 0.0);
+		
+		for (Map<String, Double> values : data.values()) {
+			for (String stock : values.keySet()) {
+				
+			}
+		}
+		
+		// Step 2: Rank them in ascending order
+		
+		
+		// Step 3: Make recommendation:
+		Map<String, String> recs = new HashMap<String, String>();
+		return recs;
+	}
+
+	public List<String> getStats() {
+		List<String> stats = new LinkedList<String>();
+		stats.add("STDEV");
+		stats.add("AAD");
+		return stats;
+	}
+
+}

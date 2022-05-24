@@ -1,0 +1,5 @@
+package edu.uchicago.adamzhang22.robo;
+
+public abstract class InvestmentStrategy {
+	
+}

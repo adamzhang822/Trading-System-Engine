@@ -1,0 +1,25 @@
+package edu.uchicago.adamzhang22.accounts;
+import java.util.List;
+
+public class InvestmentAccounts implements Runnable {
+	
+	
+	StateOfMind state;
+	List<String> subscriptions;
+	
+	public InvestmentAccounts(StateOfMind state, List<String> subscriptions) {
+		this.state = state;
+		this.subscriptions = subscriptions;
+	}
+	
+	public void changeState(StateOfMind state) {
+		this.state = state;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

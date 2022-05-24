@@ -1,0 +1,7 @@
+package edu.uchicago.adamzhang22.robo;
+import java.util.Map;
+
+public interface InvestmentStrategy {
+	Map<String, String> makeRecommendations(Map<String, Map<String, Double>> vals);
+	
+}

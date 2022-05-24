@@ -1,0 +1,26 @@
+package camelinaction;
+
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
+
+import edu.uchicago.adamzhang22.robo.RoboInvestor;
+
+public class RoboProcessor implements Processor {
+	
+	RoboInvestor robo;
+	String ticker;
+	String stat;
+	
+	public RoboProcessor(RoboInvestor robo) {
+		this.robo = robo;
+	}
+	
+	
+	@Override
+	public void process(Exchange exchange) throws Exception {
+		
+		Double payload = exchange.getIn().getBody(Double.class);
+		robo.getData().get(ticker).put(stat, payload);
+	}
+	
+}

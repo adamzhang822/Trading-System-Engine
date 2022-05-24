@@ -1,0 +1,9 @@
+package edu.uchicago.adamzhang22.accounts;
+
+import java.util.Map;
+
+public class DiamondHands implements StateOfMind {
+
+
+
+}

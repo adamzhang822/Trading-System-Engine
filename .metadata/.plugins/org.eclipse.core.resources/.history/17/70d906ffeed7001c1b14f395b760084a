@@ -1,0 +1,12 @@
+package camelinaction;
+
+import edu.uchicago.adamzhang22.robo.*;
+import java.util.List;
+import java.util.LinkedList;
+public class RoboManager {
+	public static void main(String[] args) {
+		InvestmentStrategy strategy = new MiddleOfTheRoad();
+		List<String> stocks = new LinkedList<String>();
+		RoboInvestor investor = new RoboInvestor();
+	}
+}

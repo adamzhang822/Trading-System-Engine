@@ -1,0 +1,13 @@
+package edu.uchicago.adamzhang22.accounts;
+import java.util.List;
+import java.util.LinkedList;
+
+public class InvestorManager {
+	public static void main(String[] args) throws InterruptedException {
+		StateOfMind diamondHnads = new DiamondHands();
+		StateOfMind panicSelling = new PanicSelling();
+		StateOfMind neutral = new Neutral();
+		
+		List<String> sub1 = new LinkedList<String>();
+	}
+}

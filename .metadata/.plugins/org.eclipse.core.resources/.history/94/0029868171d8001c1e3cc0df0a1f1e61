@@ -1,0 +1,17 @@
+package edu.uchicago.adamzhang22.accounts;
+
+import org.apache.camel.Exchange;
+import org.apache.camel.processor.aggregate.AggregationStrategy;
+import java.util.Map;
+
+public class Blackboard implements AggregationStrategy {
+
+	@Override
+	public Exchange aggregate(Exchange oldExchange, Exchange newExchange) {
+		if (oldExchange == null) return newExchange;
+		Map<String, String> newRecs = newExchange.getIn().getBody(java.util.Map);
+		
+		return null;
+	}
+	
+}

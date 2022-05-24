@@ -1,0 +1,17 @@
+package camelinaction;
+
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
+import java.util.Map;
+
+public class TryProcessor implements Processor {
+
+	public void process(Exchange exchange) throws Exception {
+		Map<String, Object> payload = exchange.getIn().getBody(java.util.Map.class);
+		for (String o : payload.keySet()) {
+			System.out.println("Key : " + o);
+			System.out.println("Value : " + Double.toString((double) payload.get(o)));
+		}
+	}
+
+}

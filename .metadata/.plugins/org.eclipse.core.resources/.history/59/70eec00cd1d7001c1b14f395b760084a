@@ -1,0 +1,14 @@
+package camelinaction;
+
+public class Multiple {
+	public static void main(String[] args) throws Exception {
+		Consumer consumer1 = new Consumer();
+		Consumer consumer2 = new Consumer();
+		
+		Thread t1 = new Thread(consumer1);
+		Thread t2 = new Thread(consumer2);
+		
+		
+		
+	}
+}

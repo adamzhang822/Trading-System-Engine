@@ -1,0 +1,13 @@
+package edu.uchicago.adamzhang22.accounts;
+
+import java.util.Map;
+
+public class DiamondHands implements RiskAppetite {
+
+	@Override
+	public Map<String, String> evaluateRecs(Map<String, String> recs) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

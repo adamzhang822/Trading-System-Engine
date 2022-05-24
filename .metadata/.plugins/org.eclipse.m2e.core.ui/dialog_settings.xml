@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/Users/adamzhang/Desktop/oo/lab6/MPCS-Lab6-Subscriber"/>
+			<item value="/Users/adamzhang/Desktop/oo/lab6/MPCS-Lab6-Consumer"/>
+			<item value="/Users/adamzhang/Desktop/oo/lab6/MPCS-Lab6-Producer"/>
+			<item value="/Users/adamzhang/Desktop/lab6"/>
+			<item value="/Users/adamzhang/Desktop/lab6/MPCS-Lab6-Producer"/>
+			<item value="/Users/adamzhang/Desktop/lab6/MPCS-Lab6-Consumer"/>
+			<item value="/Users/adamzhang/Desktop/lab5/MPCS-Lab5-Consumer"/>
+			<item value="/Users/adamzhang/Desktop/lab5/MPCS-Lab5-Producer"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="494"/>
+		<item key="x" value="388"/>
+		<item key="y" value="-925"/>
+	</section>
+</section>

@@ -1,0 +1,8 @@
+package edu.uchicago.adamzhang22.robo;
+import java.util.List;
+
+
+public abstract class InvestmentStrategy {
+	public abstract List<String> statsNeeded();
+	
+}

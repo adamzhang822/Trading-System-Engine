@@ -1,0 +1,23 @@
+package camelinaction;
+
+import edu.uchicago.adamzhang22.robo.*;
+import java.util.List;
+import java.util.LinkedList;
+
+public class RoboManager {
+	public static void main(String[] args) throws InterruptedException {
+		InvestmentStrategy strategy = new MiddleOfTheRoad();
+		List<String> stocks1 = new LinkedList<String>();
+		stocks1.add("ORCL");
+		stocks1.add("IBM");
+		stocks1.add("MSFT");
+		List<String> stocks2 = new LinkedList<String>();
+		stocks2.add("ORCL");
+		stocks2.add("MSFT");
+		RoboInvestor investor = new RoboInvestor(stocks, strategy);
+		Thread t = new Thread(investor);
+		t.start();
+		t.join();
+		System.out.println("Ran!");
+	}
+}

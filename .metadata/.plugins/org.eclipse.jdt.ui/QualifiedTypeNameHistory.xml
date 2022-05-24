@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="org.apache.camel.component.jackson.JacksonDataFormat"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.CopyOnWriteArrayList"/>
+    <fullyQualifiedTypeName name="camelinaction.UpdateFlasher"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="edu.uchicago.adamzhang22.analytics_engine.AverageAbsoluteDeviation"/>
+    <fullyQualifiedTypeName name="edu.uchicago.adamzhang22.analytics_engine.AnalyticsEngine"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="org.apache.camel.FluentProducerTemplate"/>
+    <fullyQualifiedTypeName name="org.apache.camel.Exchange"/>
+    <fullyQualifiedTypeName name="org.apache.camel.builder.ExchangeBuilder"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="org.apache.camel.ProducerTemplate"/>
+    <fullyQualifiedTypeName name="edu.uchicago.adamzhang22.robo.InvestmentStrategy"/>
+    <fullyQualifiedTypeName name="edu.uchicago.adamzhang22.robo.MiddleOfTheRoad"/>
+    <fullyQualifiedTypeName name="edu.uchicago.adamzhang22.robo.RoboInvestor"/>
+    <fullyQualifiedTypeName name="org.apache.camel.AggregationStrategy"/>
+    <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="org.apache.camel.Processor"/>
+    <fullyQualifiedTypeName name="org.apache.camel.ConsumerTemplate"/>
+</qualifiedTypeNameHistroy>

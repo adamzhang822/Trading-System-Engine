@@ -1,0 +1,14 @@
+package edu.uchicago.adamzhang22.accounts;
+
+import java.util.Map;
+import java.util.HashMap;
+
+public class PanicSelling implements StateOfMind {
+
+	@Override
+	public Map<String, String> evaluateRecs(Map<String, String> recs) {
+		
+		return null;
+	}
+	
+}

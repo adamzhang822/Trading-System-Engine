@@ -1,0 +1,71 @@
+package edu.uchicago.adamzhang22.accounts;
+
+import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
+import javax.jms.ConnectionFactory;
+
+import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.camel.CamelContext;
+import org.apache.camel.ConsumerTemplate;
+import org.apache.camel.ProducerTemplate;
+import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.component.jms.JmsComponent;
+import org.apache.camel.impl.DefaultCamelContext;
+
+public class TestProducer {
+	public static void main(String[] args) throws Exception {
+        CamelContext context = new DefaultCamelContext();
+    	
+        // connect to ActiveMQ JMS broker listening on localhost on port 61616
+        ConnectionFactory connectionFactory = 
+        	new ActiveMQConnectionFactory("tcp://localhost:61616");
+        context.addComponent("jms",
+            JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
+               
+        // Subscribe to all relevant topics in ActiveMQ
+
+        ConsumerTemplate consumer = context.createConsumerTemplate();
+        ProducerTemplate producer = context.createProducerTemplate();
+        Map<String, String> map1 = new HashMap<String, String>();
+        map1.put("IBM", "Buy");
+        map1.put("ORCL", "Hold");
+        map1.put("MSFT", "Sell");
+        Map<String, String> map2 = new HashMap<String, String>();
+        map2.put("IBM", "Buy");
+        map2.put("ORCL", "Hold");
+        map2.put("MSFT", "Sell");
+        Map<String, String> map3 = new HashMap<String, String>();
+        map3.put("IBM", "Buy");
+        map3.put("ORCL", "Hold");
+        map3.put("MSFT", "Sell");
+        
+        context.addRoutes(new RouteBuilder() {
+        	public void configure() {
+        		from("seda:try").
+        		aggregate(null, new Blackboard()).
+        		completionSize(3).to("seda:tallied");
+        	}
+        });
+
+        
+        // start the route and let it do its work (transport data)
+        context.start();
+        // Give 9 seconds to get data from topic
+        producer.sendBody("seda:try", map1);
+        producer.sendBody("seda:try", map2);
+        producer.sendBody("seda:try", map3);
+        
+
+        System.out.println("done sleeping from subscriptions");
+        Map<String, Double> res = (Map<String, Double>) consumer.receiveBody("seda:tallied");
+        for (Map.Entry<String, Double> entry : res.entrySet()) {
+        	System.out.println(entry.getKey() + ": " + Double.toString(entry.getValue()));
+        }
+        // Move from direct to object storage
+        
+
+        Thread.sleep(2000);
+        context.stop();
+	}
+}

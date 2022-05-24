@@ -1,0 +1,7 @@
+package camelinaction;
+
+public class RoboManager {
+	public static void main(String[] args) {
+		
+	}
+}

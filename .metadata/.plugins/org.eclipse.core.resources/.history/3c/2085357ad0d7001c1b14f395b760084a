@@ -1,0 +1,9 @@
+package camelinaction;
+
+public class Multiple {
+	public static void main(String[] args) {
+		Consumer consumer1 = new Consumer();
+		Consumer consumer2 = new Consumer();
+		
+	}
+}

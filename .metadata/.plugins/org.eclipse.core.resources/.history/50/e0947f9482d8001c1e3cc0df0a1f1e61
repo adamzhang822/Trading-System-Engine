@@ -1,0 +1,16 @@
+package edu.uchicago.adamzhang22.accounts;
+
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
+import java.util.Map;
+import java.util.HashMap;
+
+public class FinalDecisionProcesso implements Processor {
+
+	@Override
+	public void process(Exchange exchange) throws Exception {
+		Map<String, Integer> scores = exchange.getIn().getBody(java.util.Map.class);
+		
+	}
+
+}
