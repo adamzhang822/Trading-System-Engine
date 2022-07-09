@@ -1,7 +1,7 @@
 ------------------------ ********************* ------------------------
 Project Overview and Pattern Explanation:
 
-This project models a trading system taking in high frequency tick data to comput analytics, flash market updates, generate trading recommendations, and then relaying to investors for final trading execution. 
+This project models a trading system taking in high frequency tick data to compute analytics, flash market updates, generate trading recommendations, and then relaying to investors for final trading execution. 
 
 The project consists of five parts, each of which is encapsulated as its own Java sub-project:
 
